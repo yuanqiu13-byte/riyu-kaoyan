@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>日语考研 · 院校专业查询（2027）</title>
+<title>煦和日语 · 日语考研院校专业查询（2027）</title>
 <style>
 :root{--bg:#f5f6fa;--card:#fff;--ink:#1c2230;--muted:#596173;--line:#dfe3ec;--accent:#b8322a;--accent-soft:#fbecea;--focus:#1a5fd0;--mark:#ffe08a}
 *{box-sizing:border-box}
@@ -82,7 +82,8 @@ tbody tr:hover{background:#fafbfd}
 <a class="skip" href="#results">跳到查询结果</a>
 <header class="top"><div class="wrap">
   <h1><span class="dot" aria-hidden="true"></span>日语考研 · 院校专业查询</h1>
-  <p id="meta">数据来源：研招网 2027 院校库</p>
+  <p>煦和日语内部整理资料，供学生查询使用</p>
+  <p id="meta">数据来源：煦和日语内部整理</p>
 </div></header>
 <main class="wrap">
   <form class="panel" role="search" id="form">
@@ -113,7 +114,7 @@ tbody tr:hover{background:#fafbfd}
   <nav aria-label="按地区筛选"><ul class="regions" id="regions"></ul></nav>
   <div id="results" tabindex="-1"></div>
 </main>
-<footer>数据整理自《研招网 · 2027 院校库》表格，仅供参考。报考请以研招网及各招生单位官方发布的招生目录为准。</footer>
+<footer>本资料由煦和日语内部整理，仅供学生参考查询。实际报考请以各招生单位官方发布的招生目录为准。</footer>
 
 <dialog id="dlg" aria-labelledby="dTitle">
   <div class="dhead">
@@ -168,7 +169,7 @@ tbody tr:hover{background:#fafbfd}
   const uniqVals = col => [...new Set(recs.map(r => S[r[col]]))].sort();
   uniqVals(4).forEach(v => modeEl.add(new Option(v, v)));
   uniqVals(10).forEach(v => examEl.add(new Option(v, v)));
-  $('meta').textContent = `数据来源：研招网 2027 院校库 · ${schools.size} 所院校 · ${regions.length} 个地区 · ${recs.length} 条招生方向 · 外语科目均为 (203) 日语`;
+  $('meta').textContent = `数据来源：煦和日语内部整理 · ${schools.size} 所院校 · ${regions.length} 个地区 · ${recs.length} 条招生方向 · 外语科目均为 (203) 日语`;
 
   // ---- 查询状态 ----
   let regionSel = null, pred = () => true, hlRe = null, hlCols = new Set(), filtered = false, cur = null;
